@@ -75,7 +75,7 @@ function Hero(props) {
         </div>
       </div>
 
-      <nav
+      {/* <nav
         className={
           isDark === false ? "links_left" : "links_left inks_left_dark"
         }
@@ -116,7 +116,7 @@ function Hero(props) {
           vasamnarasimhulu123@gmail.com
         </a>
         <div className="stright_line_verticle"></div>
-      </div>
+      </div> */}
     </section>
   );
 }
