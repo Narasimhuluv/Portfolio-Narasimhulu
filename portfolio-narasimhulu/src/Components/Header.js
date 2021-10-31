@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
 function Header(props) {
