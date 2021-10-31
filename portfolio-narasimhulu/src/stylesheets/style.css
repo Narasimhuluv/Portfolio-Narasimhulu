@@ -521,6 +521,9 @@ a {
   .flex_33 {
     flex: 0 1 40%;
   }
+  .flex_80 {
+    flex: 0 80%;
+  }
   .hero {
     min-height: 70vh;
   }
@@ -550,7 +553,7 @@ a {
   }
   .skills {
     width: 90% !important;
-    margin: auto;
+    margin: 3rem auto !important;
   }
   .mail_right {
     right: -17rem;
@@ -622,7 +625,7 @@ a {
   }
   .skills {
     width: 90% !important;
-    margin: auto;
+    margin: 3rem auto !important;
   }
   .skills_section {
     width: 90%;
@@ -714,7 +717,7 @@ a {
   }
   .skills {
     width: 90% !important;
-    margin: auto;
+    margin: 3rem auto !important;
   }
   .about {
     width: 80% !important;
@@ -804,7 +807,7 @@ a {
   }
   .skills {
     width: 90% !important;
-    margin: auto;
+    margin: 3rem auto !important;
   }
   .mail_right {
     right: -16rem;
