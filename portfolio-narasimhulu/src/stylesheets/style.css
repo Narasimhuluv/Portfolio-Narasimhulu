@@ -554,7 +554,7 @@ a {
     right: -17rem;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 698px) {
   html {
     font-size: 10px;
   }
@@ -611,7 +611,7 @@ a {
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 564px) {
   html {
     font-size: 10px;
   }
@@ -674,7 +674,7 @@ a {
     margin-left: 2rem !important;
   }
   .links_left {
-    left: 1rem;
+    left: 1.5rem;
   }
   .skills .width_full {
     width: 90%;
@@ -682,18 +682,22 @@ a {
     margin: auto;
   }
   .mail_right {
-    right: -17rem;
+    right: -20rem;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 392px) {
   html {
     font-size: 10px;
   }
   .container {
     width: 90%;
+    margin-left: 1rem;
   }
   .header {
     padding: 2rem 0;
+  }
+  .projects {
+    margin-left: 3rem !important;
   }
   .flex_15 {
     flex: 0 1 30%;
@@ -715,6 +719,8 @@ a {
   }
   .project_article {
     height: 22rem;
+    margin: 0 !important;
+    /* margin-left: 2rem; */
   }
   .about_banner img {
     margin: 0;
