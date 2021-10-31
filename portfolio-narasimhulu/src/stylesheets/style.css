@@ -711,7 +711,6 @@ a {
   }
   .projects {
     width: 80% !important;
-    border: 1px solid;
   }
   .skills {
     width: 90% !important;
@@ -719,7 +718,6 @@ a {
   }
   .about {
     width: 80% !important;
-    border: 1px solid;
   }
   .skills_section {
     width: 90%;
@@ -810,7 +808,6 @@ a {
   }
   .mail_right {
     right: -16rem;
-    display: non;
   }
   .skills_section {
     width: 90%;
