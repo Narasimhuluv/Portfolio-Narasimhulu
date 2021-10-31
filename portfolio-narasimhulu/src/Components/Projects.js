@@ -21,7 +21,7 @@ function Projects(props) {
       <div className="flex justify_center items_center">
         <div className=" flex items_center justify_center flex_wrap ">
           <article
-            data-aos="fade-right"
+            data-aos="fade-up"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -83,7 +83,7 @@ function Projects(props) {
           </article>
 
           <article
-            data-aos="fade-down"
+            data-aos="fade-up"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -136,7 +136,7 @@ function Projects(props) {
           </article>
 
           <article
-            data-aos="fade-left"
+            data-aos="zoom-in"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -198,7 +198,7 @@ function Projects(props) {
           </article>
 
           <article
-            data-aos="fade-right"
+            data-aos="zoom-in"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -318,7 +318,7 @@ function Projects(props) {
           </article>
 
           <article
-            data-aos="fade-left"
+            data-aos="fade-up"
             className={
               isDark === false
                 ? "flex_28 project_article"

@@ -508,7 +508,8 @@ a {
     font-size: 14px;
   }
   .container {
-    width: 90%;
+    width: 90% !important;
+    margin: auto !important;
   }
   .header {
     padding: 2rem 0;
@@ -615,7 +616,7 @@ a {
     font-size: 10px;
   }
   .container {
-    width: 90%;
+    width: 90% !important;
   }
   .header {
     padding: 2rem 0;
@@ -681,10 +682,10 @@ a {
     margin: auto;
   }
   .mail_right {
-    right: -21rem;
+    right: -17rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   html {
     font-size: 10px;
   }
@@ -758,6 +759,7 @@ a {
     margin: auto;
   }
   .mail_right {
-    right: -21rem;
+    right: -16rem;
+    display: non;
   }
 }

@@ -112,10 +112,10 @@ function Hero(props) {
             : "mail_right mail_right_dark flex items_center"
         }
       >
-        <a data-aos="fade-up" href="https://vasamnarasimhulu123@gmail.com">
+        <a href="https://vasamnarasimhulu123@gmail.com">
           vasamnarasimhulu123@gmail.com
         </a>
-        <div data-aos="fade-up" className="stright_line_verticle"></div>
+        <div className="stright_line_verticle"></div>
       </div>
     </section>
   );

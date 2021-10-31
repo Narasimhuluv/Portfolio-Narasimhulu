@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import About from "./About";
 import Header from "./Header";
 import Hero from "./Hero";
+import NavMail from "./NavMail";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
@@ -21,6 +22,7 @@ function App() {
       <Projects isDark={isDark} />
       <Skills isDark={isDark} />
       <About isDark={isDark} />
+      <NavMail isDark={isDark} />
     </div>
   );
 }
