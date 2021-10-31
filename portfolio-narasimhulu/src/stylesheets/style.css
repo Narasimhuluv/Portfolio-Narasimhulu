@@ -323,9 +323,6 @@ a {
 }
 
 /* projects */
-.projects {
-  min-height: 92vh;
-}
 .heading {
   font-size: 2rem;
   font-weight: 900;
@@ -345,6 +342,7 @@ a {
 }
 
 .project_article_semidiv {
+  width: 90%;
   margin: 0.5rem 0;
   height: 30%;
   line-height: 1.5;
@@ -369,9 +367,6 @@ a {
 }
 .project_article_dark .featured {
   color: rgb(254, 194, 91);
-}
-.project_article:hover .lottie {
-  display: block !important;
 }
 .project_list li {
   margin-right: 0.3rem;
@@ -526,6 +521,9 @@ a {
   .flex_33 {
     flex: 0 1 40%;
   }
+  .hero {
+    min-height: 70vh;
+  }
   .about_banner {
     width: 80%;
   }
@@ -550,8 +548,18 @@ a {
     display: block;
     margin: auto;
   }
+  .skills {
+    width: 90% !important;
+    margin: auto;
+  }
   .mail_right {
     right: -17rem;
+  }
+  .about {
+    min-height: 70vh;
+  }
+  .skills_section {
+    width: 90%;
   }
 }
 @media screen and (max-width: 698px) {
@@ -571,13 +579,16 @@ a {
     flex: 0 1 50%;
   }
   .flex_28 {
-    flex: 0 1 100%;
+    flex: 0 1 42%;
   }
   .flex_33 {
     flex: 0 1 40%;
   }
+  .hero {
+    min-height: 55vh;
+  }
   .hero h1 {
-    font-size: 2.2rem !important;
+    font-size: 3rem !important;
   }
   .skills .skill_image {
     width: 30px !important;
@@ -590,7 +601,7 @@ a {
     margin: 0;
   }
   .flex_42 {
-    flex: 0 1 40%;
+    flex: 0 1 40% !important;
   }
   .column {
     flex-direction: column;
@@ -609,14 +620,24 @@ a {
   .mail_right {
     right: -20rem;
   }
+  .skills {
+    width: 90% !important;
+    margin: auto;
+  }
+  .skills_section {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width: 564px) {
+@media screen and (max-width: 598px) {
   html {
     font-size: 10px;
   }
   .container {
     width: 90% !important;
+  }
+  .hero {
+    min-height: 60vh !important;
   }
   .header {
     padding: 2rem 0;
@@ -632,6 +653,10 @@ a {
   }
   .flex_33 {
     flex: 0 1 40%;
+  }
+  .hero {
+    width: 100%;
+    min-height: 70vh;
   }
   .hero h1 {
     font-size: 2.2rem !important;
@@ -682,10 +707,25 @@ a {
     margin: auto;
   }
   .mail_right {
-    right: -20rem;
+    right: -19.7rem;
+  }
+  .projects {
+    width: 80% !important;
+    border: 1px solid;
+  }
+  .skills {
+    width: 90% !important;
+    margin: auto;
+  }
+  .about {
+    width: 80% !important;
+    border: 1px solid;
+  }
+  .skills_section {
+    width: 90%;
   }
 }
-@media screen and (max-width: 392px) {
+@media screen and (max-width: 446px) {
   html {
     font-size: 10px;
   }
@@ -764,8 +804,15 @@ a {
     display: block;
     margin: auto;
   }
+  .skills {
+    width: 90% !important;
+    margin: auto;
+  }
   .mail_right {
     right: -16rem;
     display: non;
+  }
+  .skills_section {
+    width: 90%;
   }
 }

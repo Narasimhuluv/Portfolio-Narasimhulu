@@ -8,8 +8,8 @@ function Skills(props) {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <section className="container flex justify_center">
-      <div className="flex_80">
+    <section className="container flex justify_between">
+      <div className="">
         <div
           className={
             isDark === false
@@ -29,8 +29,8 @@ function Skills(props) {
           <figure className="flex_42" data-aos="zoom-in">
             <img className="width_full" src="/images/skills.svg" alt="" />
           </figure>
-          <div className="flex width_full flex_42 justify_center items_center">
-            <div className="flex justify_center flex_wrap items_center">
+          <div className="flex flex_42 justify_center items_center ">
+            <div className="flex justify_center flex_wrap items_center skills_section">
               <img
                 className={
                   isDark === false
