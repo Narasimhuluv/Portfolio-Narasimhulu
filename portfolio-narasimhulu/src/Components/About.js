@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 
 function About(props) {
   var { isDark } = props;
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <section
       className={
@@ -13,7 +18,7 @@ function About(props) {
     >
       <div className="flex_80">
         <article className="flex desktop_column justify_center">
-          <div className="flex skills_headDiv">
+          <div data-aos="fade-left" className="flex skills_headDiv">
             <div className="flex flex_33 items_center">
               <h2 className="heading" id="aboutme">
                 About Me
@@ -65,7 +70,7 @@ function About(props) {
                 </ul>
               </div>
             </div>
-            <figure className="flex_33 about_banner">
+            <figure data-aos="zoom-in-up" className="flex_33 about_banner">
               <img className="width_full" src="/images/about.svg" alt="" />
             </figure>
           </div>
@@ -74,7 +79,7 @@ function About(props) {
         <div className="flex">
           <div className="flex contact">
             <div className="flex_33">
-              <div className="flex skills_headDiv">
+              <div data-aos="fade-left" className="flex skills_headDiv">
                 <div className="flex items_center">
                   <div className="stright_line_verticle"></div>
                   <h2 className="heading">Contact</h2>
@@ -82,7 +87,11 @@ function About(props) {
               </div>
               <div className="flex_30 contact_data">
                 <article className="flex items_center">
-                  <img src="/images/profile.jpeg" alt="" />
+                  <img
+                    data-aos="fade-right"
+                    src="/images/profile.jpeg"
+                    alt=""
+                  />
                   <nav className="flex justify_center">
                     <ul className="flex_15 flex justify_between icons">
                       <li>
@@ -120,18 +129,6 @@ function About(props) {
           </div>
         </div>
       </div>
-      {/* <div
-        className={
-          isDark === false
-            ? "mail_right flex items_center"
-            : "mail_right mail_right_dark flex items_center"
-        }
-      >
-        <a href="https://vasamnarasimhulu123@gmail.com">
-          vasamnarasimhulu123@gmail.com
-        </a>
-        <div className="stright_line_verticle"></div>
-      </div> */}
     </section>
   );
 }

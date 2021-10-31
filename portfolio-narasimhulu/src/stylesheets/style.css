@@ -103,9 +103,6 @@ body {
   line-height: 1;
   /* font-family: "Anton", sans-serif; */
   font-family: "Dosis", sans-serif;
-  /* font-family: "Oswald", sans-serif; */
-  /* font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
-    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif; */
 }
 html {
   font-size: 16px;
@@ -136,7 +133,6 @@ table {
   width: 100%;
   margin: auto;
   position: relative;
-  /* border: 1px solid rgba(128, 128, 128, 0.274); */
 }
 .flex {
   display: flex;
@@ -161,7 +157,6 @@ table {
 }
 .flex_20 {
   flex: 0 1 20%;
-  /* border: 1px solid gray; */
 }
 .flex_25 {
   flex: 0 1 25%;
@@ -228,6 +223,9 @@ a {
 .header_dark li {
   color: white;
 }
+.header a:hover {
+  color: rgb(254, 194, 91);
+}
 /* hero */
 .hero {
   min-height: 88vh;
@@ -292,7 +290,6 @@ a {
 .stright_line_verticle {
   width: 120px;
   height: 2px;
-  /* background-color: rgb(168, 178, 209); */
   border-bottom: 2px dotted gray;
   border-radius: 1rem;
   margin: 0 0.5rem;
@@ -307,11 +304,13 @@ a {
 .links_left a:hover {
   margin-left: 2rem;
 }
+.links_left li:hover a {
+  margin-left: 2rem;
+}
 .mail_right {
   position: fixed;
   right: -8rem;
   bottom: 16.6rem;
-  /* border: 1px solid gray; */
   transform: rotate(90deg);
 }
 .mail_right a {
@@ -384,13 +383,6 @@ a {
   right: 0;
   margin-top: 1rem;
 }
-/* .project_overflow {
-  overflow-y: scroll;
-  height: 88vh;
-}
-.project_overflow::-webkit-scrollbar {
-  width: 0;
-} */
 .icons a {
   margin-left: 0.5rem;
 }

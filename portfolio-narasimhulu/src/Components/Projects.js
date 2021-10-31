@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Projects(props) {
   var { isDark } = props;
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className="container projects">
       <h2
@@ -14,6 +21,7 @@ function Projects(props) {
       <div className="flex justify_center items_center">
         <div className=" flex items_center justify_center flex_wrap ">
           <article
+            data-aos="fade-right"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -55,13 +63,19 @@ function Projects(props) {
             <div className="flex icons">
               <ul className="flex_15 flex justify_center ">
                 <li>
-                  <a href="https://github.com/Narasimhuluv">
+                  <a
+                    href="https://github.com/Narasimhuluv/Blog-Application/tree/main/react-blog-app"
+                    target="blank"
+                  >
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/vasam-narasimhulu-8085901b3/">
-                    <i className="fab fa-linkedin"></i>
+                  <a
+                    href="https://blog-application-six.vercel.app/"
+                    target="blank"
+                  >
+                    <OpenInNewRoundedIcon />
                   </a>
                 </li>
               </ul>
@@ -69,6 +83,7 @@ function Projects(props) {
           </article>
 
           <article
+            data-aos="fade-down"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -109,20 +124,19 @@ function Projects(props) {
             <div className="flex icons">
               <ul className="flex_15 flex justify_center ">
                 <li>
-                  <a href="https://github.com/Narasimhuluv">
+                  <a
+                    href="https://github.com/Narasimhuluv/TA-AC-BACKEND-JWT-based-authentication-TNaaak/tree/block-BNaaen/block-BNaaen/api_conduit"
+                    target="blank"
+                  >
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
-                {/* <li>
-                  <a href="https://www.linkedin.com/in/vasam-narasimhulu-8085901b3/">
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                </li> */}
               </ul>
             </div>
           </article>
 
           <article
+            data-aos="fade-left"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -164,13 +178,19 @@ function Projects(props) {
             <div className="flex icons">
               <ul className="flex_15 flex justify_center ">
                 <li>
-                  <a href="https://github.com/Narasimhuluv">
+                  <a
+                    href="https://github.com/Narasimhuluv/GithubBattle-Using-Hooks/tree/main/github-battle-hooks"
+                    target="blank"
+                  >
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/vasam-narasimhulu-8085901b3/">
-                    <i className="fab fa-linkedin"></i>
+                  <a
+                    href="https://github-battle-using-hooks.vercel.app/"
+                    target="blank"
+                  >
+                    <OpenInNewRoundedIcon />
                   </a>
                 </li>
               </ul>
@@ -178,6 +198,7 @@ function Projects(props) {
           </article>
 
           <article
+            data-aos="fade-right"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -219,13 +240,19 @@ function Projects(props) {
             <div className="flex icons">
               <ul className="flex_15 flex justify_center ">
                 <li>
-                  <a href="https://github.com/Narasimhuluv">
+                  <a
+                    href="https://github.com/Narasimhuluv/Shopping-Cart-Using-Hooks/tree/main/shopping-cart-hooks"
+                    target="blank"
+                  >
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/vasam-narasimhulu-8085901b3/">
-                    <i className="fab fa-linkedin"></i>
+                  <a
+                    href="https://shopping-cart-using-hooks.vercel.app/"
+                    target="blank"
+                  >
+                    <OpenInNewRoundedIcon />
                   </a>
                 </li>
               </ul>
@@ -233,6 +260,7 @@ function Projects(props) {
           </article>
 
           <article
+            data-aos="fade-up"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -273,13 +301,16 @@ function Projects(props) {
             <div className="flex icons">
               <ul className="flex_15 flex justify_center ">
                 <li>
-                  <a href="https://github.com/Narasimhuluv">
+                  <a
+                    href="https://github.com/Narasimhuluv/Netflix-Youtube/tree/main/netflix"
+                    target="blank"
+                  >
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/vasam-narasimhulu-8085901b3/">
-                    <i className="fab fa-linkedin"></i>
+                  <a href="https://netflix-youtube.vercel.app/" target="blank">
+                    <OpenInNewRoundedIcon />
                   </a>
                 </li>
               </ul>
@@ -287,6 +318,7 @@ function Projects(props) {
           </article>
 
           <article
+            data-aos="fade-left"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -328,56 +360,22 @@ function Projects(props) {
             <div className="flex icons">
               <ul className="flex_15 flex justify_center ">
                 <li>
-                  <a href="https://github.com/Narasimhuluv">
+                  <a
+                    href="https://github.com/Narasimhuluv/Amazon-videos/tree/main/amazon-video-play"
+                    target="blank"
+                  >
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/vasam-narasimhulu-8085901b3/">
-                    <i className="fab fa-linkedin"></i>
+                  <a href="https://amazon-videos.vercel.app/" target="blank">
+                    <OpenInNewRoundedIcon />
                   </a>
                 </li>
               </ul>
             </div>
           </article>
         </div>
-        {/* <nav className="links_left">
-          <ul className="flex desktop_column items_center ">
-            <li>
-              <a href="https://github.com/Narasimhuluv">
-                <i className="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/vasam-narasimhulu-8085901b3/">
-                <i className="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/NarasimhuluV7">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/NarasimhuluV7">
-                <i className="fab fa-twitter-square"></i>
-              </a>
-            </li>
-            <div className="stright_line"></div>
-          </ul>
-        </nav> */}
-        {/* <div
-          className={
-            isDark === false
-              ? "mail_right flex items_center"
-              : "mail_right mail_right_dark flex items_center"
-          }
-        >
-          <a href="https://vasamnarasimhulu123@gmail.com">
-            vasamnarasimhulu123@gmail.com
-          </a>
-          <div className="stright_line_verticle"></div>
-        </div> */}
       </div>
     </section>
   );

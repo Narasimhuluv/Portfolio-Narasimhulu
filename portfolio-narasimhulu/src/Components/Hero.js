@@ -92,7 +92,7 @@ function Hero(props) {
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/NarasimhuluV7">
+            <a href="https://www.facebook.com/profile.php?id=100006068237124">
               <i class="fab fa-facebook-square"></i>
             </a>
           </li>
@@ -112,10 +112,10 @@ function Hero(props) {
             : "mail_right mail_right_dark flex items_center"
         }
       >
-        <a href="https://vasamnarasimhulu123@gmail.com">
+        <a data-aos="fade-up" href="https://vasamnarasimhulu123@gmail.com">
           vasamnarasimhulu123@gmail.com
         </a>
-        <div className="stright_line_verticle"></div>
+        <div data-aos="fade-up" className="stright_line_verticle"></div>
       </div>
     </section>
   );
