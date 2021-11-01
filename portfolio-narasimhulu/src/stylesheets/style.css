@@ -720,7 +720,7 @@ a {
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 620px) {
   html {
     font-size: 13px;
   }
