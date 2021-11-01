@@ -30,7 +30,7 @@ function NavMail(props) {
               <i className="fab fa-twitter-square"></i>
             </a>
           </li>
-          <div className="stright_line"></div>
+          <div className="stright_line_verticle"></div>
         </ul>
       </nav>
 
@@ -44,7 +44,7 @@ function NavMail(props) {
         <a href="https://vasamnarasimhulu123@gmail.com">
           vasamnarasimhulu123@gmail.com
         </a>
-        <div className="stright_line_verticle"></div>
+        <div className="stright_line_verticle_mail"></div>
       </div>
     </div>
   );

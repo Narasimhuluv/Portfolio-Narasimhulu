@@ -8,112 +8,53 @@ function Skills(props) {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <section className="container flex justify_center">
-      <div className="flex_80">
+    <section className="skills">
+      <div className="container">
         <div
           className={
-            isDark === false
-              ? "flex skills_headDiv"
-              : "flex skills_headDiv skills_headDiv_dark"
+            isDark === false ? "skills_parent_div" : "skills_parent_dark_div"
           }
         >
-          <div data-aos="fade-right" className="flex flex_20 items_center">
-            <div className="stright_line_verticle"></div>
+          {/* Skills and line */}
+          <div data-aos="fade-up" className="flex items_center skill_line">
+            <div className="stright_line"></div>
             <h2 className="heading" id="skills">
               Skills
             </h2>
           </div>
-        </div>
+          {/* all skills div */}
 
-        <div className="flex skills justify_center items_center column">
-          <figure className="flex_42" data-aos="zoom-in">
-            <img className="width_full" src="/images/skills.svg" alt="" />
-          </figure>
-          <div className="flex flex_42 justify_center items_center">
-            <div className="flex justify_center flex_wrap items_center">
+          <article className="flex items_center justify_center skills_article column">
+            <figure className="flex_33 skill_figure" data-aos="zoom-in">
+              <img className="width_full" src="/images/skills.svg" alt="" />
+            </figure>
+
+            <div
+              className={
+                isDark === false
+                  ? "flex_33 flex justify_center flex_wrap items_center logos_parent_div"
+                  : "flex_33 flex justify_center flex_wrap items_center logos_parent_div logos_parent_dark_div"
+              }
+            >
+              <img className="skill_image" src="/images/git.png" alt="" />
+              <img className="skill_image" src="/images/html.svg" alt="" />
+              <img className="skill_image" src="/images/css.svg" alt="" />
+              <img className="skill_image" src="/images/js.svg" alt="" />
+              <img className="skill_image" src="/images/react.svg" alt="" />
+              <img className="skill_image" src="/images/redux.svg" alt="" />
+              <img className="skill_image" src="/images/sass.svg" alt="" />
               <img
-                className={
-                  isDark === false
-                    ? "skill_image"
-                    : "skill_image skill_image_dark"
-                }
-                src="/images/git.png"
-                alt=""
-              />
-              <img
-                className={
-                  isDark === false
-                    ? "skill_image"
-                    : "skill_image skill_image_dark"
-                }
-                src="/images/html.svg"
-                alt=""
-              />
-              <img
-                className={
-                  isDark === false
-                    ? "skill_image"
-                    : "skill_image skill_image_dark"
-                }
-                src="/images/css.svg"
-                alt=""
-              />
-              <img
-                className={
-                  isDark === false
-                    ? "skill_image"
-                    : "skill_image skill_image_dark"
-                }
-                src="/images/js.svg"
-                alt=""
-              />
-              <img
-                className={
-                  isDark === false
-                    ? "skill_image"
-                    : "skill_image skill_image_dark"
-                }
-                src="/images/react.svg"
-                alt=""
-              />
-              <img
-                className={
-                  isDark === false
-                    ? "skill_image"
-                    : "skill_image skill_image_dark"
-                }
-                src="/images/redux.svg"
-                alt=""
-              />
-              <img
-                className={
-                  isDark === false
-                    ? "skill_image"
-                    : "skill_image skill_image_dark"
-                }
-                src="/images/sass.svg"
-                alt=""
-              />
-              <img
-                className={
-                  isDark === false
-                    ? "skill_image"
-                    : "skill_image skill_image_dark"
-                }
+                className="skill_image"
                 src="/images/tailwindcss.svg"
                 alt=""
               />
               <img
-                className={
-                  isDark === false
-                    ? "skill_image"
-                    : "skill_image skill_image_dark"
-                }
+                className="skill_image"
                 src="/images/materialui.svg"
                 alt=""
               />
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>

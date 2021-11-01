@@ -8,20 +8,20 @@ function Hero(props) {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <section className="container flex justify_center" id="hero">
-      <div className="flex justify_center items_center flex_80 hero column">
-        <figure className="flex_48">
-          <img className="width_full" src="/images/profession3.svg" alt="" />
-        </figure>
+    <section className="hero">
+      <article className="container flex items_center justify_center ">
+        <div className="flex items_center justify_center hero_parent_div column">
+          <figure className="flex_48">
+            <img className="width_full" src="/images/profession3.svg" alt="" />
+          </figure>
 
-        <div
-          className={
-            isDark === false
-              ? "hero_data flex_48 flex justify_center items_center"
-              : "hero_data hero_data_dark flex_48 flex justify_center items_center"
-          }
-        >
-          <article>
+          <div
+            className={
+              isDark === false
+                ? "hero_data flex_42"
+                : "hero_data flex_42 hero_data_dark"
+            }
+          >
             <h1
               data-aos="fade-left"
               data-aos-anchor="#example-anchor"
@@ -71,52 +71,9 @@ function Hero(props) {
                 </li>
               </ul>
             </nav>
-          </article>
+          </div>
         </div>
-      </div>
-
-      {/* <nav
-        className={
-          isDark === false ? "links_left" : "links_left inks_left_dark"
-        }
-      >
-        <ul className="flex desktop_column items_center ">
-          <li>
-            <a href="https://github.com/Narasimhuluv">
-              <i className="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/vasam-narasimhulu-8085901b3/">
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=100006068237124">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/NarasimhuluV7">
-              <i className="fab fa-twitter-square"></i>
-            </a>
-          </li>
-          <div className="stright_line"></div>
-        </ul>
-      </nav>
-
-      <div
-        className={
-          isDark === false
-            ? "mail_right flex items_center"
-            : "mail_right mail_right_dark flex items_center"
-        }
-      >
-        <a href="https://vasamnarasimhulu123@gmail.com">
-          vasamnarasimhulu123@gmail.com
-        </a>
-        <div className="stright_line_verticle"></div>
-      </div> */}
+      </article>
     </section>
   );
 }

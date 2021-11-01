@@ -9,47 +9,47 @@ function About(props) {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <section
-      className={
-        isDark === false
-          ? "container about flex justify_center"
-          : "container about flex justify_center about_dark"
-      }
-    >
-      <div className="flex_80">
-        <article className="flex desktop_column justify_center">
-          <div data-aos="fade-left" className="flex skills_headDiv">
-            <div className="flex flex_33 items_center">
-              <h2 className="heading" id="aboutme">
-                About Me
-              </h2>
-              <div className="stright_line_verticle"></div>
-            </div>
+    <section className="about">
+      <div className="container">
+        <div
+          className={
+            isDark === false
+              ? "skill_parent_div about_parent_div"
+              : "skill_parent_div about_parent_div skills_parent_dark_div"
+          }
+        >
+          {/* about and line */}
+          <div data-aos="fade-right" className="flex items_center skill_line">
+            <h2 className="heading" id="aboutme">
+              About Me
+            </h2>
+            <div className="stright_line"></div>
           </div>
+          {/* --------------------- */}
+          {/* data about */}
 
-          <div className="flex  about_data column">
-            <div className="flex_28">
-              <div>
-                <p>
-                  Hello! I'm Narasimhulu Vasam, from Kadapa(D), AndhraPradesh,
-                  also known as YSR District , AndhraPradesh.
-                </p>
-                <p>
-                  I am a creative, time punctual, dedicated, goal-oriented
-                  individual with decent moral Values and Ethicates along with a
-                  high-energy level, honed communication skills, strong
-                  organizational skills, and meticulous attention to detail.
-                </p>
-                <p>
-                  I have done my Post Graduation from YVU (
-                  <a href="http://www.yogivemanauniversity.ac.in/">
-                    Yogi Vemana University
-                  </a>
-                  ) , Kadapa, AndhraPradesh in Specialization of Commerce
-                  (2018-2020).
-                </p>
-                <p>Here are a few of the other activities that I love to do!</p>
-              </div>
+          <article className="flex items_center justify_center column">
+            <div className="flex_42 about_data">
+              <p>
+                Hello! I'm <span className="name">Narasimhulu Vasam</span> ,
+                from Kadapa(D), AndhraPradesh, also known as YSR District ,
+                AndhraPradesh.
+              </p>
+              <p>
+                I am a creative, time punctual, dedicated, goal-oriented
+                individual with decent moral Values and Ethicates along with a
+                high-energy level, honed communication skills, strong
+                organizational skills, and meticulous attention to detail.
+              </p>
+              <p>
+                I have done my Post Graduation from YVU (
+                <a href="http://www.yogivemanauniversity.ac.in/">
+                  Yogi Vemana University
+                </a>
+                ) , Kadapa, AndhraPradesh in Specialization of Commerce
+                (2018-2020).
+              </p>
+              <p>Here are a few of the other activities that I love to do!</p>
               <div className="about_skills">
                 <ul className="">
                   <li className="flex items_center">
@@ -70,60 +70,65 @@ function About(props) {
                 </ul>
               </div>
             </div>
-            <figure data-aos="zoom-in-up" className="flex_33 about_banner">
+
+            <figure data-aos="zoom-in-up" className="flex_33 skill_figure">
               <img className="width_full" src="/images/about.svg" alt="" />
             </figure>
-          </div>
-        </article>
+          </article>
 
-        <div className="flex">
-          <div className="flex contact">
-            <div className="flex_33">
-              <div data-aos="fade-left" className="flex skills_headDiv">
-                <div className="flex items_center">
-                  <div className="stright_line_verticle"></div>
-                  <h2 className="heading">Contact</h2>
+          {/* data contact  */}
+
+          <div className="flex">
+            <div className="flex contact">
+              <div className="flex_33">
+                <div data-aos="fade-down" className="flex skills_headDiv">
+                  <div className="flex items_center">
+                    <div className="stright_line_verticle_mail"></div>
+                    <h2 className="heading" id="contact">
+                      Contact
+                    </h2>
+                  </div>
                 </div>
-              </div>
-              <div className="flex_30 contact_data">
-                <article className="flex items_center">
-                  <img
-                    data-aos="fade-right"
-                    src="/images/profile.jpeg"
-                    alt=""
-                  />
-                  <nav className="flex justify_center">
-                    <ul className="flex_15 flex justify_between icons">
-                      <li>
-                        <a
-                          className="git_linc_twitt"
-                          href="https://github.com/Narasimhuluv"
-                        >
-                          <i className="fab fa-github"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="git_linc_twitt"
-                          href="https://www.linkedin.com/in/vasam-narasimhulu-8085901b3/"
-                        >
-                          <i className="fab fa-linkedin"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="git_linc_twitt"
-                          href="https://twitter.com/NarasimhuluV7"
-                        >
-                          <i className="fab fa-twitter-square"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <a className="resume" href="/" download>
-                    Resume
-                  </a>
-                </article>
+                <div className="flex_30 contact_data">
+                  <article className="flex items_center">
+                    <img
+                      data-aos="fade-right"
+                      src="/images/profile.jpeg"
+                      alt=""
+                    />
+                    <nav className="flex justify_center">
+                      <ul className="flex_15 flex justify_between icons">
+                        <li>
+                          <a
+                            className="git_linc_twitt"
+                            href="https://github.com/Narasimhuluv"
+                          >
+                            <i className="fab fa-github"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className="git_linc_twitt"
+                            href="https://www.linkedin.com/in/vasam-narasimhulu-8085901b3/"
+                          >
+                            <i className="fab fa-linkedin"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className="git_linc_twitt"
+                            href="https://twitter.com/NarasimhuluV7"
+                          >
+                            <i className="fab fa-twitter-square"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <a className="resume" href="/" download>
+                      Resume
+                    </a>
+                  </article>
+                </div>
               </div>
             </div>
           </div>

@@ -10,18 +10,18 @@ function Projects(props) {
   }, []);
 
   return (
-    <section className="container projects">
-      <h2
-        id="projects"
-        className={isDark === false ? "heading" : "heading dark_heading"}
-      >
-        Personal Projects
-      </h2>
+    <section className="projects">
+      <div className="container">
+        <h2
+          id="projects"
+          className={isDark === false ? "heading" : "heading dark_heading"}
+        >
+          Personal Projects
+        </h2>
 
-      <div className="flex justify_center items_center">
-        <div className=" flex items_center justify_center flex_wrap ">
+        <div className="flex justify_center items_center flex_wrap projects_parent_div">
           <article
-            data-aos="fade-up"
+            data-aos="zoom-in"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -83,7 +83,7 @@ function Projects(props) {
           </article>
 
           <article
-            data-aos="fade-up"
+            data-aos="zoom-in"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -260,7 +260,7 @@ function Projects(props) {
           </article>
 
           <article
-            data-aos="fade-up"
+            data-aos="zoom-in"
             className={
               isDark === false
                 ? "flex_28 project_article"
@@ -318,7 +318,7 @@ function Projects(props) {
           </article>
 
           <article
-            data-aos="fade-up"
+            data-aos="zoom-in"
             className={
               isDark === false
                 ? "flex_28 project_article"
