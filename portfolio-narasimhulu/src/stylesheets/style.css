@@ -647,6 +647,9 @@ a {
   .header {
     padding: 1rem 0;
   }
+  .hero_parent_div {
+    min-height: 60vh;
+  }
   .projects_parent_div {
     width: 100%;
   }
@@ -715,9 +718,12 @@ a {
   }
 }
 
-@media screen and (max-width: 547px) {
+@media screen and (max-width: 590px) {
   html {
     font-size: 13px;
+  }
+  .hero_parent_div {
+    min-height: 60vh;
   }
   .hero_parent_div,
   .projects_parent_div,
@@ -739,12 +745,12 @@ a {
     margin-right: -10rem;
   }
 }
-@media screen and (max-width: 447px) {
+@media screen and (max-width: 455px) {
   html {
     font-size: 12px;
   }
   .hero_parent_div {
-    min-height: 65vh;
+    min-height: 50vh;
   }
   .hero h1 {
     font-size: 2.2rem;
