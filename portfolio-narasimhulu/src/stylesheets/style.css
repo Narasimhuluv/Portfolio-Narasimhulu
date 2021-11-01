@@ -227,6 +227,7 @@ a {
 .header li {
   font-weight: 700;
   color: rgb(10, 68, 83);
+  cursor: pointer;
 }
 .header a:hover {
   color: rgb(10, 68, 83);
@@ -234,6 +235,7 @@ a {
 .header_dark li {
   color: rgb(254, 194, 91);
   font-weight: 900;
+  cursor: pointer;
 }
 .header_dark a {
   color: rgba(255, 255, 255, 0.774);
@@ -718,7 +720,7 @@ a {
   }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 560px) {
   html {
     font-size: 13px;
   }
@@ -742,7 +744,7 @@ a {
     width: 80%;
   }
   .mail_right {
-    margin-right: -10rem;
+    margin-right: -11.3rem;
   }
 }
 @media screen and (max-width: 455px) {
@@ -786,7 +788,7 @@ a {
   }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   html {
     font-size: 12px;
   }
@@ -810,6 +812,9 @@ a {
   }
   .mail_right {
     margin-right: -11rem;
+  }
+  .contact .stright_line_verticle_mail {
+    width: 210px;
   }
 }
 @media screen and (max-width: 375px) {
