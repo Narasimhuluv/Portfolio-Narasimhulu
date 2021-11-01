@@ -270,7 +270,7 @@ function Projects(props) {
             <div className="flex items_center">
               <div>
                 <p className="featured">Featured Project</p>
-                <h2>Netfix clone</h2>
+                <h2>Netflix clone</h2>
               </div>
               <lottie-player
                 src="https://assets1.lottiefiles.com/private_files/lf30_is6flrfu.json"
