@@ -560,7 +560,7 @@ a {
     margin-right: -5.5rem;
   }
 }
-@media screen and (max-width: 1325px) {
+@media screen and (max-width: 1283px) {
   .hero h1 {
     font-size: 2.3rem;
   }
@@ -574,6 +574,19 @@ a {
   }
   .logos_parent_div {
     width: 90% !important;
+  }
+  .links_left {
+    margin-left: -7rem;
+  }
+  .mail_right {
+    margin-right: -9rem;
+  }
+  .logos_parent_div {
+    width: 100%;
+  }
+  .skill_image {
+    width: 30px;
+    height: 30px;
   }
 }
 @media screen and (max-width: 940px) {
