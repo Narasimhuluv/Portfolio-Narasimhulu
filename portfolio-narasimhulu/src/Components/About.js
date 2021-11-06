@@ -124,7 +124,11 @@ function About(props) {
                         </li>
                       </ul>
                     </nav>
-                    <a className="resume" href="/" download>
+                    <a
+                      className="resume"
+                      href="./assets/Vasam_MERN-Developer.pdf"
+                      download
+                    >
                       Resume
                     </a>
                   </article>
