@@ -22,7 +22,7 @@ function NavMail(props) {
           </li>
           <li>
             <a href="https://www.facebook.com/profile.php?id=100006068237124">
-              <i class="fab fa-facebook-square"></i>
+              <i class="fa-brands fa-square-facebook"></i>
             </a>
           </li>
           <li>
