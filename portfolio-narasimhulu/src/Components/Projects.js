@@ -18,8 +18,7 @@ function Projects(props) {
     >
      Personal Projects
     </h2>
-
-           <div className="flex justify_center items_center flex_wrap projects_parent_div">
+    <div className="flex justify_center items_center flex_wrap projects_parent_div">
      <article
       data-aos="zoom-in"
       className={
