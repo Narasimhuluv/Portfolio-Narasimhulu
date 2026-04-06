@@ -33,7 +33,7 @@ function Hero(props) {
         Narasimhulu Vasam.
        </span>
       </h1>
-      <h2>A Full Stack Web Developer (4+ yoe).</h2>
+      <h2>A Full Stack Web Developer (5 yoe).</h2>
       <p>
        Proficient in MERN stack, Passionate about implementing and launching new
        projects. Ability to translate business requirements into technical
