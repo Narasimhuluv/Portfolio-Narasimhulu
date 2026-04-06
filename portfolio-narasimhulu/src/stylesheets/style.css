@@ -816,6 +816,9 @@ a {
  .contact .stright_line_verticle_mail {
   width: 250px;
  }
+ .project_article {
+  flex: 0 1 85% !important;
+ }
 }
 
 @media screen and (max-width: 414px) {
